@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #171717;
+  --tertiary-color: #525252;
+  --quaternary-color: #f9fafb, #d2d6db;
+}
 body {
   margin: 0;
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -8,6 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background: linear-gradient(135deg, #f9fafb, #d2d6db);
 }
 
 * {
@@ -26,4 +33,29 @@ body {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--primary-color);
+  width: 340px;
+}
+.testimonial-card .header {
+  display: flex;
+  align-items: center;
+}
+.testimonial-card p {
+  margin-top: 2px;
+}
+.testimonial-card img {
+  width: 50px;
+}
+.testimonial-card p {
+  align-items: ;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
 }
